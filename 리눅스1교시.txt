@@ -1,0 +1,202 @@
+root@student7-virtual-machine:~/바탕화면# cd
+root@student7-virtual-machine:~# apt-get -y install xinetd telnetd
+패키지 목록을 읽는 중입니다... 완료
+의존성 트리를 만드는 중입니다... 완료
+상태 정보를 읽는 중입니다... 완료        
+E: xinetd 패키지를 찾을 수 없습니다
+E: telnetd 패키지를 찾을 수 없습니다
+root@student7-virtual-machine:~# nano /etc/apt/sources.list
+root@student7-virtual-machine:~# apt update
+받기:1 http://mirror.kakao.com/ubuntu bionic InRelease [242 kB]
+받기:2 http://mirror.kakao.com/ubuntu bionic/main i386 Packages [1,007 kB]    
+받기:3 https://dl.google.com/linux/chrome/deb stable InRelease [1,825 B]      
+받기:4 http://mirror.kakao.com/ubuntu bionic/main amd64 Packages [1,019 kB]   
+받기:5 http://mirror.kakao.com/ubuntu bionic/main Translation-en [516 kB]     
+받기:6 http://mirror.kakao.com/ubuntu bionic/main Translation-ko [215 kB]     
+받기:7 http://mirror.kakao.com/ubuntu bionic/main amd64 DEP-11 Metadata [477 kB]
+받기:8 https://dl.google.com/linux/chrome/deb stable/main amd64 Packages [1,075 B]
+받기:9 http://mirror.kakao.com/ubuntu bionic/main DEP-11 48x48 Icons [118 kB] 
+받기:10 http://mirror.kakao.com/ubuntu bionic/main DEP-11 64x64 Icons [245 kB]
+받기:11 http://mirror.kakao.com/ubuntu bionic/main DEP-11 64x64@2 Icons [29 B]
+받기:12 http://mirror.kakao.com/ubuntu bionic/universe amd64 Packages [8,570 kB]
+받기:13 http://kr.archive.ubuntu.com/ubuntu bionic InRelease [242 kB]         
+받기:14 http://mirror.kakao.com/ubuntu bionic/universe i386 Packages [8,531 kB]
+받기:15 http://mirror.kakao.com/ubuntu bionic/universe Translation-ko [458 kB]
+받기:16 http://mirror.kakao.com/ubuntu bionic/universe Translation-en [4,941 kB]
+받기:17 http://kr.archive.ubuntu.com/ubuntu bionic/main i386 Packages [1,007 kB]
+받기:18 http://mirror.kakao.com/ubuntu bionic/universe amd64 DEP-11 Metadata [3,287 kB]
+받기:19 http://mirror.kakao.com/ubuntu bionic/universe DEP-11 48x48 Icons [2,151 kB]
+받기:20 http://mirror.kakao.com/ubuntu bionic/universe DEP-11 64x64 Icons [8,420 kB]
+받기:21 http://mirror.kakao.com/ubuntu bionic/universe DEP-11 64x64@2 Icons [29 B]
+받기:22 http://mirror.kakao.com/ubuntu bionic/multiverse amd64 Packages [151 kB]
+받기:23 http://mirror.kakao.com/ubuntu bionic/multiverse i386 Packages [144 kB]
+받기:24 http://mirror.kakao.com/ubuntu bionic/multiverse Translation-ko [492 B]
+받기:25 http://mirror.kakao.com/ubuntu bionic/multiverse Translation-en [108 kB]
+받기:26 http://mirror.kakao.com/ubuntu bionic/multiverse amd64 DEP-11 Metadata [49.7 kB]
+받기:27 http://mirror.kakao.com/ubuntu bionic/multiverse DEP-11 48x48 Icons [8,931 B]
+받기:28 http://kr.archive.ubuntu.com/ubuntu bionic/main amd64 Packages [1,019 kB]
+받기:29 http://mirror.kakao.com/ubuntu bionic/multiverse DEP-11 64x64 Icons [225 kB]
+받기:30 http://mirror.kakao.com/ubuntu bionic/multiverse DEP-11 64x64@2 Icons [29 B]
+받기:31 http://mirror.kakao.com/ubuntu bionic/restricted i386 Packages [9,156 B]
+받기:32 http://mirror.kakao.com/ubuntu bionic/restricted amd64 Packages [9,184 B]
+받기:33 http://mirror.kakao.com/ubuntu bionic/restricted Translation-ko [308 B]
+받기:34 http://mirror.kakao.com/ubuntu bionic/restricted Translation-en [3,584 B]
+받기:35 http://kr.archive.ubuntu.com/ubuntu bionic/main Translation-en [516 kB]
+받기:36 http://kr.archive.ubuntu.com/ubuntu bionic/main Translation-ko [215 kB]
+받기:37 http://kr.archive.ubuntu.com/ubuntu bionic/main amd64 DEP-11 Metadata [477 kB]
+받기:38 http://kr.archive.ubuntu.com/ubuntu bionic/main DEP-11 48x48 Icons [118 kB]
+받기:39 http://kr.archive.ubuntu.com/ubuntu bionic/main DEP-11 64x64 Icons [245 kB]
+받기:40 http://kr.archive.ubuntu.com/ubuntu bionic/main DEP-11 64x64@2 Icons [29 B]
+받기:41 http://kr.archive.ubuntu.com/ubuntu bionic/universe amd64 Packages [8,570 kB]
+받기:42 http://kr.archive.ubuntu.com/ubuntu bionic/universe i386 Packages [8,531 kB]
+받기:43 http://kr.archive.ubuntu.com/ubuntu bionic/universe Translation-ko [458 kB]
+받기:44 http://kr.archive.ubuntu.com/ubuntu bionic/universe Translation-en [4,941 kB]
+받기:45 http://kr.archive.ubuntu.com/ubuntu bionic/universe amd64 DEP-11 Metadata [3,287 kB]
+받기:46 http://kr.archive.ubuntu.com/ubuntu bionic/universe DEP-11 48x48 Icons [2,151 kB]
+받기:47 http://kr.archive.ubuntu.com/ubuntu bionic/universe DEP-11 64x64 Icons [8,420 kB]
+받기:48 http://kr.archive.ubuntu.com/ubuntu bionic/universe DEP-11 64x64@2 Icons [29 B]
+받기:49 http://kr.archive.ubuntu.com/ubuntu bionic/multiverse amd64 Packages [151 kB]
+받기:50 http://kr.archive.ubuntu.com/ubuntu bionic/multiverse i386 Packages [144 kB]
+받기:51 http://kr.archive.ubuntu.com/ubuntu bionic/multiverse Translation-ko [492 B]
+받기:52 http://kr.archive.ubuntu.com/ubuntu bionic/multiverse Translation-en [108 kB]
+받기:53 http://kr.archive.ubuntu.com/ubuntu bionic/multiverse amd64 DEP-11 Metadata [49.7 kB]
+받기:54 http://kr.archive.ubuntu.com/ubuntu bionic/multiverse DEP-11 48x48 Icons [8,931 B]
+받기:55 http://kr.archive.ubuntu.com/ubuntu bionic/multiverse DEP-11 64x64 Icons [225 kB]
+받기:56 http://kr.archive.ubuntu.com/ubuntu bionic/multiverse DEP-11 64x64@2 Icons [29 B]
+받기:57 http://kr.archive.ubuntu.com/ubuntu bionic/restricted i386 Packages [9,156 B]
+받기:58 http://kr.archive.ubuntu.com/ubuntu bionic/restricted amd64 Packages [9,184 B]
+받기:59 http://kr.archive.ubuntu.com/ubuntu bionic/restricted Translation-ko [308 B]
+받기:60 http://kr.archive.ubuntu.com/ubuntu bionic/restricted Translation-en [3,584 B]
+내려받기 81.8 M바이트, 소요시간 18초 (4,548 k바이트/초)                       
+패키지 목록을 읽는 중입니다... 완료
+의존성 트리를 만드는 중입니다... 완료
+상태 정보를 읽는 중입니다... 완료        
+모든 패키지가 최신입니다.
+W: http://ftp.daumkakao.com/ubuntu/dists/bionic/InRelease: Key is stored in legacy trusted.gpg keyring (/etc/apt/trusted.gpg), see the DEPRECATION section in apt-key(8) for details.
+W: http://kr.archive.ubuntu.com/ubuntu/dists/bionic/InRelease: Key is stored in legacy trusted.gpg keyring (/etc/apt/trusted.gpg), see the DEPRECATION section in apt-key(8) for details.
+root@student7-virtual-machine:~# apt-get -y install xinetd telnetd
+패키지 목록을 읽는 중입니다... 완료
+의존성 트리를 만드는 중입니다... 완료
+상태 정보를 읽는 중입니다... 완료        
+다음 새 패키지를 설치할 것입니다:
+  telnetd xinetd
+0개 업그레이드, 2개 새로 설치, 0개 제거 및 0개 업그레이드 안 함.
+147 k바이트 아카이브를 받아야 합니다.
+이 작업 후 420 k바이트의 디스크 공간을 더 사용하게 됩니다.
+받기:1 http://mirror.kakao.com/ubuntu bionic/universe amd64 xinetd amd64 1:2.3.15.3-1 [108 kB]
+받기:2 http://mirror.kakao.com/ubuntu bionic/universe amd64 telnetd amd64 0.17-41 [39.3 kB]
+내려받기 147 k바이트, 소요시간 0초 (633 k바이트/초)
+Selecting previously unselected package xinetd.
+(데이터베이스 읽는중 ...현재 202665개의 파일과 디렉터리가 설치되어 있습니다.)
+Preparing to unpack .../xinetd_1%3a2.3.15.3-1_amd64.deb ...
+Unpacking xinetd (1:2.3.15.3-1) ...
+Selecting previously unselected package telnetd.
+Preparing to unpack .../telnetd_0.17-41_amd64.deb ...
+Unpacking telnetd (0.17-41) ...
+xinetd (1:2.3.15.3-1) 설정하는 중입니다 ...
+telnetd (0.17-41) 설정하는 중입니다 ...
+사용자 telnetd을(를) utmp 그룹에 등록 중
+Note: xinetd currently is not fully supported by update-inetd.
+Please consult /usr/share/doc/xinetd/README.Debian and itox(8).
+update-inetd: warning: cannot add service, /etc/inetd.conf does not exist
+Processing triggers for man-db (2.10.2-1) ...
+root@student7-virtual-machine:~# cd /etc/xinetd.d
+root@student7-virtual-machine:/etc/xinetd.d# nano telnet
+root@student7-virtual-machine:/etc/xinetd.d# cd
+root@student7-virtual-machine:~# adduser teluser
+'teluser' 사용자를 추가 중...
+새 그룹 'teluser' (1004) 추가 ...
+새 사용자 'teluser' (1006) 을(를) 그룹 'teluser' (으)로 추가 ...
+'/home/teluser' 홈 디렉터리를 생성하는 중...
+'/etc/skel'에서 파일들을 복사하는 중...
+새 암호: 
+잘못된 비밀번호: 암호는 8 개의 문자 보다 짧습니다
+새 암호 재입력: 
+passwd: 암호를 성공적으로 업데이트했습니다
+teluser의 사용자의 정보를 바꿉니다
+새로운 값을 넣거나, 기본값을 원하시면 엔터를 치세요
+	이름 []: 
+	방 번호 []: 
+	직장 전화번호 []: 
+	집 전화번호 []: 
+	기타 []: 
+정보가 올바릅니까? [Y/n] y
+root@student7-virtual-machine:~# systemctl restart xinetd
+root@student7-virtual-machine:~# systemctl enable  xinetd
+xinetd.service is not a native service, redirecting to systemd-sysv-install.
+Executing: /lib/systemd/systemd-sysv-install enable xinetd
+root@student7-virtual-machine:~# systemctl status  xinetd
+● xinetd.service - LSB: Starts or stops the xinetd daemon.
+     Loaded: loaded (/etc/init.d/xinetd; generated)
+     Active: active (running) since Tue 2023-05-30 09:40:40 KST; 34s ago
+       Docs: man:systemd-sysv-generator(8)
+      Tasks: 1 (limit: 4573)
+     Memory: 484.0K
+        CPU: 68ms
+     CGroup: /system.slice/xinetd.service
+             └─2656 /usr/sbin/xinetd -pidfile /run/xinetd.pid -stayalive -inet>
+
+ 5월 30 09:40:40 student7-virtual-machine xinetd[2656]: Reading included confi>
+ 5월 30 09:40:40 student7-virtual-machine xinetd[2656]: Reading included confi>
+ 5월 30 09:40:40 student7-virtual-machine xinetd[2656]: Reading included confi>
+ 5월 30 09:40:40 student7-virtual-machine xinetd[2656]: Reading included confi>
+ 5월 30 09:40:40 student7-virtual-machine xinetd[2656]: Reading included confi>
+ 5월 30 09:40:40 student7-virtual-machine xinetd[2656]: Attribute disable need>
+ 5월 30 09:40:40 student7-virtual-machine xinetd[2656]: Reading included confi>
+ 5월 30 09:40:40 student7-virtual-machine xinetd[2656]: Reading included confi>
+ 5월 30 09:40:40 student7-virtual-machine xinetd[2656]: 2.3.15.3 started with >
+ 5월 30 09:40:40 student7-virtual-machine xinetd[2656]: Started working: 0 ava>
+root@student7-virtual-machine:~# nano /etc/xinetd.d/telnet
+root@student7-virtual-machine:~# systemctl restart xinetd
+root@student7-virtual-machine:~# systemctl enable xinetd
+xinetd.service is not a native service, redirecting to systemd-sysv-install.
+Executing: /lib/systemd/systemd-sysv-install enable xinetd
+root@student7-virtual-machine:~# systemctl status  xinetd
+● xinetd.service - LSB: Starts or stops the xinetd daemon.
+     Loaded: loaded (/etc/init.d/xinetd; generated)
+     Active: active (running) since Tue 2023-05-30 09:45:09 KST; 25s ago
+       Docs: man:systemd-sysv-generator(8)
+      Tasks: 1 (limit: 4573)
+     Memory: 488.0K
+        CPU: 71ms
+     CGroup: /system.slice/xinetd.service
+             └─2844 /usr/sbin/xinetd -pidfile /run/xinetd.pid -stayalive -inet>
+
+ 5월 30 09:45:09 student7-virtual-machine xinetd[2844]: Reading included confi>
+ 5월 30 09:45:09 student7-virtual-machine xinetd[2844]: Reading included confi>
+ 5월 30 09:45:09 student7-virtual-machine xinetd[2844]: Reading included confi>
+ 5월 30 09:45:09 student7-virtual-machine xinetd[2844]: Reading included confi>
+ 5월 30 09:45:09 student7-virtual-machine xinetd[2844]: Reading included confi>
+ 5월 30 09:45:09 student7-virtual-machine xinetd[2844]: Attribute disable need>
+ 5월 30 09:45:09 student7-virtual-machine xinetd[2844]: Reading included confi>
+ 5월 30 09:45:09 student7-virtual-machine xinetd[2844]: Reading included confi>
+ 5월 30 09:45:09 student7-virtual-machine xinetd[2844]: 2.3.15.3 started with >
+root@student7-virtual-machine:~# nano /etc/xinetd.d/telnet
+root@student7-virtual-machine:~# systemctl restart xinetd
+root@student7-virtual-machine:~# systemctl enable xinetd
+xinetd.service is not a native service, redirecting to systemd-sysv-install.
+Executing: /lib/systemd/systemd-sysv-install enable xinetd
+root@student7-virtual-machine:~# systemctl status  xinetd
+● xinetd.service - LSB: Starts or stops the xinetd daemon.
+     Loaded: loaded (/etc/init.d/xinetd; generated)
+     Active: active (running) since Tue 2023-05-30 09:46:58 KST; 8s ago
+       Docs: man:systemd-sysv-generator(8)
+      Tasks: 1 (limit: 4573)
+     Memory: 500.0K
+        CPU: 72ms
+     CGroup: /system.slice/xinetd.service
+             └─3000 /usr/sbin/xinetd -pidfile /run/xinetd.pid -stayalive -inet>
+
+ 5월 30 09:46:58 student7-virtual-machine xinetd[3000]: Reading included confi>
+ 5월 30 09:46:58 student7-virtual-machine xinetd[3000]: Reading included confi>
+ 5월 30 09:46:58 student7-virtual-machine xinetd[3000]: Reading included confi>
+ 5월 30 09:46:58 student7-virtual-machine xinetd[3000]: Reading included confi>
+ 5월 30 09:46:58 student7-virtual-machine xinetd[3000]: Reading included confi>
+ 5월 30 09:46:58 student7-virtual-machine xinetd[3000]: Reading included confi>
+ 5월 30 09:46:58 student7-virtual-machine xinetd[3000]: Reading included confi>
+ 5월 30 09:46:58 student7-virtual-machine xinetd[3000]: Reading included confi>
+ 5월 30 09:46:58 student7-virtual-machine xinetd[3000]: 2.3.15.3 started with >
+root@student7-virtual-machine:~# ufw allow 23/tcp
+규칙이 추가되었습니다
+규칙이 추가되었습니다 (v6)
+root@student7-virtual-machine:~# 
